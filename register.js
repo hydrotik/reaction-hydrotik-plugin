@@ -15,7 +15,7 @@ Reaction.registerPackage({
     }
   ],
   layout: [{
-    layout: "coreLayoutBeesknees",
+    layout: "coreLayoutBeesKnees",
     workflow: "coreWorkflow",
     collection: "Products",
     theme: "default",
