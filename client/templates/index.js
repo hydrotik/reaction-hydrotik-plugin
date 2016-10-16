@@ -4,7 +4,7 @@ import "./checkout/review/review";
 
 // layouts
 import "./layouts/core.html";
-
+import "./layouts/footer.html";
 
 // products
 import "./products/productsLanding.html";
