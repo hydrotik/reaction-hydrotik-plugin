@@ -22,7 +22,7 @@ Reaction.registerPackage({
     enabled: true,
     structure: {
       template: "productsLanding",
-      layoutHeader: "layoutHeader",
+      layoutHeader: "layoutHeaderBeesKnees",
       layoutFooter: "layoutFooterBeesKnees",
       notFound: "productNotFound",
       dashboardHeader: "",
