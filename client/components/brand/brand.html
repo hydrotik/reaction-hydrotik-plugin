@@ -1,0 +1,10 @@
+<template name="customNavigationBrand">
+  <a class="brand" href="{{pathFor '/'}}">
+    {{#with logo}}
+      <div class="logo">
+        HELLO BRAND IMAGE <img src="{{url}}">
+      </div>
+    {{/with}}
+    <span class="title">HELLO BRAND TEXT {{siteName}}</span>
+  </a>
+</template>
