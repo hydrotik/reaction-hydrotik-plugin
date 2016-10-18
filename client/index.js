@@ -7,3 +7,5 @@ import "./components/brand/brand.js";
 
 import "./components/navbar/navbar.html";
 import "./components/navbar/navbar.js";
+
+import "./components/hero/hero.html";
