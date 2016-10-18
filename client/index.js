@@ -9,3 +9,5 @@ import "./components/navbar/navbar.html";
 import "./components/navbar/navbar.js";
 
 import "./components/hero/hero.html";
+import "./components/hero/hero.js";
+import "./components/hero/containers";
