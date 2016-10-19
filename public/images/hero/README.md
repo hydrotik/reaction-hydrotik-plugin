@@ -1,0 +1,1 @@
+Replace image paths in client/components/hero/container/CarouselContainer.jsx with your own until this is hooked into Reaction content creation.
