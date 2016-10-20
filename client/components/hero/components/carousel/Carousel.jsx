@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from "react";
 
-import { CustomPrevArrow, CustomNextArrow, CarouselItem } from "./index.js";
+import { CarouselItem } from "./index.js";
 import { map } from 'lodash';
 import Slider from 'react-slick';
 
@@ -13,27 +13,24 @@ class Carousel extends Component {
   }
 
   static defaultProps = {
-        slides: []
+        slides: [],
+        settings: {
+          dots: false,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
   }
 
   static propTypes = {
-        slides: PropTypes.array.isRequired
+        slides: PropTypes.array.isRequired,
+        settings: PropTypes.object
   }
 
   render() {
 
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      prevArrow: <CustomPrevArrow />,
-      nextArrow: <CustomNextArrow />
-    };
-
-    const { slides } = this.props;
+    const { slides, settings } = this.props;
 
     return (
             <div className='carousel'>

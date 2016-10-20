@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from "react";
 
-import { Carousel } from "../components/carousel";
+import { Carousel, CustomPrevArrow, CustomNextArrow } from "../components/carousel";
+
 
 import Slider from 'react-slick';
 
@@ -13,6 +14,17 @@ class CarouselContainer extends Component {
   }
 
   render() {
+
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: <CustomPrevArrow />,
+      nextArrow: <CustomNextArrow />
+    };
 
     const slides = [
       {
@@ -55,7 +67,7 @@ class CarouselContainer extends Component {
 
     return (
       <div className='carousel'>
-        <Carousel slides={slides} />
+        <Carousel slides={slides} settings={settings} />
       </div>
     );
   }
