@@ -15,7 +15,18 @@ class CarouselContainer extends Component {
 
   render() {
 
-    const settings = {
+    const promoSettings = {
+      height: 100,
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    };
+
+    const heroSettings = {
+      height: 600,
       dots: true,
       infinite: true,
       speed: 500,
@@ -26,7 +37,7 @@ class CarouselContainer extends Component {
       nextArrow: <CustomNextArrow />
     };
 
-    const slides = [
+    const heroSlides = [
       {
         title: "Slide 1",
         description: "Slide 1 Description",
@@ -67,7 +78,8 @@ class CarouselContainer extends Component {
 
     return (
       <div className='carousel'>
-        <Carousel slides={slides} settings={settings} />
+        <Carousel slides={heroSlides} settings={promoSettings} />
+        <Carousel slides={heroSlides} settings={heroSettings} />
       </div>
     );
   }

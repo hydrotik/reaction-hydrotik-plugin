@@ -18,17 +18,22 @@ export class CarouselItem extends Component {
             description: "",
             href: "",
             src:""
-        }
+        },
+        height: 600
     }
     
     static propTypes = {
-        item: React.PropTypes.object.isRequired
+        item: React.PropTypes.object.isRequired,
+        height: React.PropTypes.number
     }
 
     render() {
 
+        const { height } = this.props;
+
         const divStyle = {
-            backgroundImage: 'url(' + this.props.item.src + ')'
+            backgroundImage: 'url(' + this.props.item.src + ')',
+            height: height + 'px'
         };
 
         return (

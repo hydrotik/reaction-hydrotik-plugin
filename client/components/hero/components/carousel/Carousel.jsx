@@ -13,39 +13,44 @@ class Carousel extends Component {
   }
 
   static defaultProps = {
-        slides: [],
-        settings: {
-          dots: false,
-          infinite: true,
-          speed: 500,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+    slides: [],
+    settings: {}
   }
 
   static propTypes = {
-        slides: PropTypes.array.isRequired,
-        settings: PropTypes.object
+    slides: PropTypes.array.isRequired,
+    settings: PropTypes.object
   }
 
   render() {
 
-    const { slides, settings } = this.props;
+    const { slides, settings} = this.props;
+
+    const carouselStyle = {
+      height: settings.height + 'px'
+    };
 
     return (
-            <div className='carousel'>
-                <Slider {... settings}>
-                    {map(slides, this.renderCarouselSlide)}
-                </Slider>
-            </div>
-        );
+      <div className='carousel' style={carouselStyle}>
+          <Slider {... settings}>
+            {map(slides, (item, i) => this.renderCarouselSlide(item, i))}
+        </Slider>
+      </div>
+    );
   }
 
   renderCarouselSlide(item, i) {
-      return (<div key={i}>
-              <CarouselItem item={item} />
-          </div>
-      );
+    const { settings} = this.props;
+
+    const carouselStyle = {
+      height: settings.height + 'px'
+    };
+    
+    return (
+      <div key={i}>
+        <CarouselItem item={item} style={carouselStyle} />
+      </div>
+    );
   }
 }
 
