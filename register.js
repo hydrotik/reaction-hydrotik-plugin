@@ -15,15 +15,15 @@ Reaction.registerPackage({
     }
   ],
   layout: [{
-    layout: "coreLayoutBeesKnees",
+    layout: "coreLayoutHydrotik",
     workflow: "coreWorkflow",
     collection: "Products",
     theme: "default",
     enabled: true,
     structure: {
       template: "productsLanding",
-      layoutHeader: "layoutHeaderBeesKnees",
-      layoutFooter: "layoutFooterBeesKnees",
+      layoutHeader: "layoutHeaderHydrotik",
+      layoutFooter: "layoutFooterHydrotik",
       notFound: "productNotFound",
       dashboardHeader: "",
       dashboardControls: "dashboardControls",

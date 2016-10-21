@@ -51,5 +51,5 @@ function changeLayouts(shopId, newLayout) {
 Hooks.Events.add("afterCoreInit", () => {
   modifyCheckoutWorkflow();
   addRolesToVisitors();
-  changeLayouts(Reaction.getShopId(), "coreLayoutBeesKnees");
+  changeLayouts(Reaction.getShopId(), "coreLayoutHydrotik");
 });

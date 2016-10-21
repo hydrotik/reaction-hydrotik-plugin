@@ -1,10 +1,11 @@
 <template name="customNavigationBrand">
-  <a class="brand" href="{{pathFor '/'}}">
-    {{#with logo}}
+  <a class="brand" href="{{pathFor '/'}}" title="{{siteName}}">
+    {{#if logo}}
       <div class="logo">
-        HELLO BRAND IMAGE <img src="{{url}}">
+        <img src="{{logo.url}}" alt="{{siteName}}">
       </div>
-    {{/with}}
-    <span class="title">HELLO BRAND TEXT {{siteName}}</span>
+    {{else}}
+      <span class="title">{{siteName}}</span>
+    {{/if}}
   </a>
 </template>

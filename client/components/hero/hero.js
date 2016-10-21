@@ -1,8 +1,8 @@
-import { CarouselContainer } from "./containers";
+import { HeroContainer } from "./index";
 
 
 Template.CustomHero.helpers({
-  CarouselContainer() {
-    return CarouselContainer;
+  HeroContainer() {
+    return HeroContainer;
   }
 });

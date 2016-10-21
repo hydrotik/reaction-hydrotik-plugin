@@ -4,7 +4,7 @@ import { Tags } from "/lib/collections";
 /**
  * layoutHeader events
  */
-Template.layoutHeaderBeesKnees.events({
+Template.layoutHeaderHydrotik.events({
   "click .navbar-accounts .dropdown-toggle": function () {
     return setTimeout(function () {
       return $("#login-email").focus();
@@ -15,7 +15,7 @@ Template.layoutHeaderBeesKnees.events({
   }
 });
 
-Template.layoutHeaderBeesKnees.helpers({
+Template.layoutHeaderHydrotik.helpers({
   TagNav() {
     return ReactionUI.TagNav.Components.TagNav;
   },

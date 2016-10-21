@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from "react";
 
-import { Carousel, CustomPrevArrow, CustomNextArrow } from "../components/carousel";
+import { Carousel, CustomPrevArrow, CustomNextArrow } from "../carousel";
 
 
 import Slider from 'react-slick';
 
-class CarouselContainer extends Component {
+class HeroContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -111,4 +111,4 @@ class CarouselContainer extends Component {
   }
 }
 
-export default CarouselContainer;
+export default HeroContainer;
