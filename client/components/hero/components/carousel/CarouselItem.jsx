@@ -19,26 +19,57 @@ export class CarouselItem extends Component {
             href: "",
             src:""
         },
-        height: 600
+        type: "",
+        height: 600,
+        backgroundColor: ""
     }
     
     static propTypes = {
         item: React.PropTypes.object.isRequired,
+        type: React.PropTypes.string.isRequired,
+        backgroundColor: React.PropTypes.string,
         height: React.PropTypes.number
     }
 
+    /*
+        Clean this up!
+    */
+
     render() {
 
-        const { height } = this.props;
+        const { height, type, item, backgroundColor} = this.props;
 
         const divStyle = {
-            backgroundImage: 'url(' + this.props.item.src + ')',
             height: height + 'px'
         };
 
+        if(item.hasOwnProperty('src') && item.src != ""){
+            divStyle.backgroundImage = 'url(' + this.props.item.src + ')';
+        }
+
+        if(backgroundColor != ""){
+            divStyle.backgroundColor = backgroundColor;
+        }
+
         return (
             <div className='carouselitem' style={divStyle}>
-                <div onClick={this.onItemClick} className='carouselitem__link'>
+                {this.renderContents(type)}
+            </div>
+        );
+    }
+
+    onItemClick(e) {
+        e.preventDefault();
+        // window.alert('You clicked ' + this.props.item.href);
+
+        location.replace(this.props.item.href);
+    }
+
+    renderContents(type) {
+        switch(type){
+            case 'hero':
+                return (
+                  <div onClick={this.onItemClick} className='carouselitem__link'>
                     <div className='carouselitem__link__content'>
                         <h2 className='carouselitem__link__content__heading'>
                             {this.props.item.title}
@@ -46,14 +77,21 @@ export class CarouselItem extends Component {
                         <p>{this.props.item.description}</p>
                     </div>
                 </div>
-            </div>
-        );
+                );
+                break;
+            case 'promo':
+                return (
+                  <div onClick={this.onItemClick} className='carouselitem__link'>
+                    <p className='carouselitem__link__promo'>{this.props.item.description}</p>
+                </div>
+                );
+                break;
+        }
     }
 
-    onItemClick(e) {
-        e.preventDefault();
-        window.alert('You clicked ' + this.props.item.href);
-    }
+    /*
+        /Clean this up!
+    */
 }
 
 export default CarouselItem;

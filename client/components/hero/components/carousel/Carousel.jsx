@@ -48,7 +48,7 @@ class Carousel extends Component {
     
     return (
       <div key={i}>
-        <CarouselItem item={item} style={carouselStyle} />
+        <CarouselItem item={item} type={settings.type} style={carouselStyle} height={settings.height} backgroundColor={settings.backgroundColor} />
       </div>
     );
   }
