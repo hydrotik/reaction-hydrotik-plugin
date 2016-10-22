@@ -71,10 +71,9 @@ export class CarouselItem extends Component {
                 return (
                   <div onClick={this.onItemClick} className='carouselitem__link'>
                     <div className='carouselitem__link__content'>
-                        <h2 className='carouselitem__link__content__heading'>
-                            {this.props.item.title}
-                        </h2>
-                        <p>{this.props.item.description}</p>
+                        {this.renderHeader(this.props.item.title)}
+                        {this.renderDescription(this.props.item.description)}
+                        {this.renderCTA(this.props.item.cta)}
                     </div>
                 </div>
                 );
@@ -86,6 +85,30 @@ export class CarouselItem extends Component {
                 </div>
                 );
                 break;
+        }
+    }
+
+    renderHeader(prop){
+        if(prop != undefined && prop != ''){
+            return <h2 className='carouselitem__link__content__heading'>{prop}</h2>;
+        }else{
+            return '';
+        }
+    }
+
+    renderDescription(prop){
+        if(prop != undefined && prop != ''){
+            return <p>{prop}</p>;
+        }else{
+            return '';
+        }
+    }
+
+    renderCTA(prop){
+        if(prop != undefined && prop != ''){
+            return <button type="button" className="btn btn-hero">{prop}</button>;
+        }else{
+            return '';
         }
     }
 

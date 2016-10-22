@@ -32,21 +32,22 @@ class HeroContainer extends Component {
     const heroSlides = [
       {
         title: "Slide 1",
-        description: "Slide 1 Description",
         href: "http://www.google.com",
-        src: 'images/hero/model-600238_1920.jpg'
+        src: 'images/hero/model-600238_1920.jpg',
+        cta: "Shop Now"
       },
       {
         title: "Slide 2",
         description: "Slide 2 Description",
         href: "http://www.google.com",
-        src: 'images/hero/fashion-1636872_1920.jpg'
+        src: 'images/hero/fashion-1636872_1920.jpg',
+        cta: ""
       },
       {
-        title: "Slide 3",
         description: "Slide 3 Description",
         href: "http://www.google.com",
-        src: 'images/hero/fashion-1636868_1920.jpg'
+        src: 'images/hero/fashion-1636868_1920.jpg',
+        cta: "Shop Now"
       }
     ];
 
