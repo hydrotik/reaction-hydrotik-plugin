@@ -1,1 +1,3 @@
-Replace image paths in client/components/hero/container/CarouselContainer.jsx with your own until this is hooked into Reaction content creation.
+Copy images into /public
+
+Royalty free and rights free from [pixabay](https://pixabay.com)
