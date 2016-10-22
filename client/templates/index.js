@@ -5,6 +5,7 @@ import "./checkout/review/review";
 // layouts
 import "./layouts/core.html";
 import "./layouts/footer.html";
+import "./layouts/footer";
 import "./layouts/header.html";
 import "./layouts/header";
 
