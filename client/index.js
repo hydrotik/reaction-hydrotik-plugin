@@ -8,4 +8,5 @@ import "./components/brand/brand.js";
 import "./components/navbar/navbar.html";
 import "./components/navbar/navbar.js";
 
+import "./components/promo";
 import "./components/hero";

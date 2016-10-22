@@ -15,19 +15,6 @@ class HeroContainer extends Component {
 
   render() {
 
-    const promoSettings = {
-      height: 36,
-      autoplay: true,
-      autoplaySpeed: 8000,
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      type: "promo"
-    };
-
     const heroSettings = {
       height: 600,
       dots: true,
@@ -41,27 +28,6 @@ class HeroContainer extends Component {
       type: "hero",
       backgroundColor: "#545454"
     };
-
-    const promoSlides = [
-      {
-        title: "",
-        description: "Free shipping on items over $99!",
-        href: "http://www.cnn.com",
-        src: ''
-      },
-      {
-        title: "",
-        description: "25% off marked items this week only!",
-        href: "http://www.cnn.com",
-        src: ''
-      },
-      {
-        title: "",
-        description: "Sign up for the Reaction card and get 15% off your purchase",
-        href: "http://www.cnn.com",
-        src: ''
-      }
-    ];
 
     const heroSlides = [
       {
@@ -104,7 +70,6 @@ class HeroContainer extends Component {
 
     return (
       <div className='carousel'>
-        <Carousel slides={promoSlides} settings={promoSettings} />
         <Carousel slides={heroSlides} settings={heroSettings} />
       </div>
     );

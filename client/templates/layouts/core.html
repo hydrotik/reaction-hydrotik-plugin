@@ -13,6 +13,7 @@
     </nav>
 
   <main role="main" id="main">
+    {{> CustomPromo}}
     {{> CustomHero}}
     <span id="layout-alerts">{{> inlineAlerts}}</span>
     {{#if hasPermission 'guest'}}
