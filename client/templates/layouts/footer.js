@@ -5,7 +5,7 @@ import { merge } from "lodash";
 Template.layoutFooterHydrotik.onCreated(function () {
   this.settings = ReactiveVar();
 
-  // Update product subscription
+  // Initialize settings value for footer
   this.autorun(() => {
 
 
