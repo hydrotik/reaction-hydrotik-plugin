@@ -50,6 +50,7 @@ git reset HEAD --hard
 - [ ] Recently Viewed
 - [ ] Product Ratings
 - [ ] Product Reviews
+- [ ] Group Orders
 - [ ] Content Management System that maps to URL structure
 - [ ] SASS
 - [ ] Promo Manager
