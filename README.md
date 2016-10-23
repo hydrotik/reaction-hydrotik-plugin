@@ -40,6 +40,7 @@ git reset HEAD --hard
 ### Roadmap
 - [x] CTA in Hero
 - [ ] Hero only on INDEX
+- [ ] Category Left Hand Nav
 - [ ] Promo on all pages DEFAULT
 - [ ] Reskin PDP
 - [ ] Category Landing Pages
@@ -50,6 +51,7 @@ git reset HEAD --hard
 - [ ] Recently Viewed
 - [ ] Product Ratings
 - [ ] Product Reviews
+- [ ] Faceted Search
 - [ ] Group Orders
 - [ ] Content Management System that maps to URL structure
 - [ ] SASS
