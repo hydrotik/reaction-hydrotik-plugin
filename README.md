@@ -37,3 +37,17 @@ Do the ```reaction pull``` first to make sure there are no git merge conflicts. 
 git reset HEAD --hard
 ```
 
+### Roadmap
+- [x] CTA in Hero
+- [ ] Hero only on INDEX
+- [ ] Promo on all pages DEFAULT
+- [ ] Reskin PDP
+- [ ] Category Landing Pages
+- [ ] Hero on Category Landing Pages
+
+### Wants from Reaction Commerce
+- [ ] Membership
+- [ ] Content Management System that maps to URL structure
+- [ ] SASS
+- [ ] Promo Manager
+- [ ] Category Landing Pages
