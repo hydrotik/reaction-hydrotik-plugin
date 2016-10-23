@@ -30,6 +30,25 @@ Reaction.registerPackage({
       dashboardHeaderControls: "",
       adminControlsFooter: "adminControlsFooter"
     } }
-  ]
+  ],
+  settings: {
+    public: [
+      {
+        images: 'images/hero/'
+      },
+      {
+        images: 'images/ajax-loader.gif'
+      },
+      {
+        fonts: 'fonts/'
+      }
+    ],
+    npm: {
+      dependencies: {
+        "react-slick": "^0.14.5",
+        "slick-carousel": "^1.6.0"
+      }
+    }
+  }
 });
 
