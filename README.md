@@ -47,6 +47,9 @@ git reset HEAD --hard
 
 ### Wants from Reaction Commerce
 - [ ] Membership
+- [ ] Recently Viewed
+- [ ] Product Ratings
+- [ ] Product Reviews
 - [ ] Content Management System that maps to URL structure
 - [ ] SASS
 - [ ] Promo Manager
