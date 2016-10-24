@@ -37,6 +37,17 @@ Do the ```reaction pull``` first to make sure there are no git merge conflicts. 
 git reset HEAD --hard
 ```
 
+### More helpful things...
+
+* I suggest using [RoboMongo](https://robomongo.org) 
+* Connect ith Roboongo and delete the <blank> document under the Shops Collection to see the aboutus.html static template
+* Git submodules are most helpful when working with Heroku. Reaction Commerce will be upstream and your Reaction project will be origin master and your plugin will be your submodule.
+
+
+
+
+
+
 ### Roadmap
 - [x] CTA in Hero
 - [ ] Hero only on INDEX
