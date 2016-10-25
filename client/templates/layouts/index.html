@@ -1,4 +1,4 @@
-<template name="coreLayoutHydrotik">
+<template name="indexLayoutHydrotik">
 {{#if hasDashboardAccess}}
   {{> coreAdminLayout}}
 {{else}}
@@ -13,6 +13,8 @@
     </nav>
 
   <main role="main" id="main">
+    {{> CustomPromo}}
+    {{> CustomHero}}
     <span id="layout-alerts">{{> inlineAlerts}}</span>
     {{#if hasPermission 'guest'}}
       <!-- begin template region -->
