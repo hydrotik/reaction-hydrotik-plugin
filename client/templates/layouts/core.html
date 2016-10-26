@@ -2,12 +2,12 @@
 {{#if hasDashboardAccess}}
   {{> coreAdminLayout}}
 {{else}}
+  {{> CustomPromo}}
     <nav class="reaction-navigation-header">
       <!-- begin layoutHeader -->
       {{> Template.dynamic template=layoutHeader}}
       <!-- end layoutHeader -->
     </nav>
-
     <nav class="reaction-cart-drawer">
       {{>cartDrawer}}
     </nav>
