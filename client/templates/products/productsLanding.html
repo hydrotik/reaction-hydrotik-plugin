@@ -35,34 +35,73 @@
 
 <template name="productsLandingIndex">
   {{> CustomHero}}
-
-  <div class="row">
-    <div class="col-sm-6">Hi</div>
-    <div class="col-sm-6">
-        <div class="row">
-            <div class="col-sm-6">Hi</div>
-            <div class="col-sm-6">Hi</div>
-        </div>        
-        <div class="row">
-            <div class="col-sm-6">Hi</div>
-            <div class="col-sm-6">Hi</div>
+  <div class="container editorial-grid-container">
+    <div class="row">
+      <div class="col-sm-6 container-editorial container-editorial--half" style="background-image: url('images/editorial/editorial-1.jpg');">
+        <div class="editorial-grid-content">
+          <p class="white">Pearl Necklace Choker</p>
+          <button type="button" class="btn btn-hero">Buy Now</button>
         </div>
+      </div>
+      <div class="col-sm-6 container-editorial">
+          <div class="row container-editorial">
+              <div class="col-sm-6 container-editorial container-editorial--quarter" style="background-color:#f5f2e8;">
+                <div class="editorial-grid-content">
+                  <p class="grey">Black Frame Glasses</p>
+                  <button type="button" class="btn btn-hero">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-sm-6 container-editorial container-editorial--quarter" style="background-image: url('images/editorial/editorial-4.jpg');">
+                
+              </div>
+          </div>        
+          <div class="row container-editorial">
+              <div class="col-sm-6 container-editorial container-editorial--quarter" style="background-image: url('images/editorial/editorial-5.jpg');">
+                
+              </div>
+              <div class="col-sm-6 container-editorial container-editorial--quarter" style="background-color:#574744;">
+                <div class="editorial-grid-content">
+                  <p class="white">Peridot Necklace</p>
+                  <button type="button" class="btn btn-hero">Buy Now</button>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-9 container-editorial">
+          <div class="row container-editorial">
+              <div class="col-sm-8 container-editorial container-editorial--quarter" style="background-image: url('images/editorial/editorial-2.jpg');">
+                
+              </div>
+              <div class="col-sm-4 container-editorial container-editorial--quarter" style="background-color:#f3fbfb;">
+                <div class="editorial-grid-content">
+                  <p class="grey">Brand Name Coat</p>
+                  <button type="button" class="btn btn-hero">Buy Now</button>
+                </div>
+              </div>
+          </div>
+          <div class="row container-editorial">
+              <div class="col-sm-4 container-editorial container-editorial--quarter" style="background-image: url('images/editorial/editorial-6.jpg');">
+                
+              </div>
+              <div class="col-sm-8 container-editorial container-editorial--quarter" style="background-color:#f8f6e5;">
+                <div class="editorial-grid-content">
+                  <p class="grey">Mens Lorem Scarf</p>
+                  <button type="button" class="btn btn-hero">Buy Now</button>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-3 container-editorial container-editorial--half" style="background-image: url('images/editorial/editorial-3.jpg');">
+        <div class="editorial-grid-content">
+                  <p class="white">Mesh Summer Dress</p>
+                  <button type="button" class="btn btn-hero">On Sale Now</button>
+                </div>
+      </div>
     </div>
-
-    <div class="col-sm-8">
-        <div class="row">
-            <div class="col-sm-8">Hi</div>
-            <div class="col-sm-4">Hi</div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">Hi</div>
-            <div class="col-sm-8">Hi</div>
-        </div>
-    </div>
-    <div class="col-sm-4"></div>
-</div>
-
+  </div>
   {{#if ready}}
+    <div class="container">
     {{>productGrid products=products}}
 
     {{#if loadMoreProducts}}
@@ -79,6 +118,7 @@
         <div class="spinner"></div>
       </div>
     {{/unless}}
+    </div>
   {{else}}
     <div class="spinner-container spinner-container-lg">
       <div class="spinner"></div>

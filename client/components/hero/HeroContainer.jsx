@@ -16,7 +16,7 @@ class HeroContainer extends Component {
   render() {
 
     const heroSettings = {
-      height: 600,
+      height: 500,
       dots: true,
       infinite: true,
       speed: 500,

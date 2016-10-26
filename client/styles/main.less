@@ -20,6 +20,51 @@
     transition: all 0.5s;
 }
 
+.editorial-grid-container {
+    margin-top: 48px;
+}
+
+.container-editorial {
+    margin:0;
+    padding:0;
+    background-size: cover;
+    border: 0;
+    text-align: center;
+
+    .editorial-grid-content {
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            margin : 0;
+
+            .white {
+                color: white;
+            }
+
+            .grey {
+                color: #545454;
+            }
+    }
+
+    &--half{
+        height:576px;
+    }
+
+    &--quarter{
+        height:288px;
+    }
+}
+
+.img-editorial {
+    max-width: 100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    display: block;
+}
+
 
 /* Webpack Global Modifiers for Slick */
 
