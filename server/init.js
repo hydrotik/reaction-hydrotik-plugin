@@ -52,5 +52,4 @@ Hooks.Events.add("afterCoreInit", () => {
   modifyCheckoutWorkflow();
   addRolesToVisitors();
   changeLayouts(Reaction.getShopId(), "coreLayoutHydrotik");
-  changeLayouts(Reaction.getShopId(), "indexLayoutHydrotik");
 });
