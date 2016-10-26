@@ -35,6 +35,33 @@
 
 <template name="productsLandingIndex">
   {{> CustomHero}}
+
+  <div class="row">
+    <div class="col-sm-6">Hi</div>
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-6">Hi</div>
+            <div class="col-sm-6">Hi</div>
+        </div>        
+        <div class="row">
+            <div class="col-sm-6">Hi</div>
+            <div class="col-sm-6">Hi</div>
+        </div>
+    </div>
+
+    <div class="col-sm-8">
+        <div class="row">
+            <div class="col-sm-8">Hi</div>
+            <div class="col-sm-4">Hi</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">Hi</div>
+            <div class="col-sm-8">Hi</div>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+
   {{#if ready}}
     {{>productGrid products=products}}
 
