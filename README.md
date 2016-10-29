@@ -1,4 +1,6 @@
-#Reaction Plugin Customization
+#Reaction Plugin Customization Exercise
+
+This is based off of Brent Hover's [reaction example plugin](https://github.com/reactioncommerce/reaction-example-plugin) starter. Brent is very helpful and hopefully this minimizes the questions he gets asked in the future;)
 
 ```ssh
 reaction reset -n && reaction
@@ -59,9 +61,9 @@ Session.set("INDEX_OPTIONS", {
 
 ### Roadmap
 - [x] CTA in Hero
-- [ ] Hero only on INDEX
+- [x] Hero only on INDEX
 - [ ] Category Left Hand Nav
-- [ ] Promo on all pages DEFAULT
+- [x] Promo on all pages DEFAULT
 - [ ] Reskin PDP
 - [ ] Category Landing Pages
 - [ ] Hero on Category Landing Pages
