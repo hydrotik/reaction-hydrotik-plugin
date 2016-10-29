@@ -49,6 +49,12 @@ git reset HEAD --hard
 ```
 * Be sure to use the github url format in your submodule as there might be a known conflict with Heroku.
 * Don't forget to commit changes to your Reaction instance after you commit your submodule changes before pushing to Heroku.
+* productsLanding in templates/layouts has two templates in it. The later is designed to show a best sellers product display only on the homepage. The default is set in register.js for the site, but for the homepage we override this template. This is set in client/defaults.js:
+```javascript
+Session.set("INDEX_OPTIONS", {
+  template: "productsLandingIndex"
+});
+```
 
 
 ### Roadmap
