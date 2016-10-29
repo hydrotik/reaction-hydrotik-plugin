@@ -194,9 +194,17 @@ Template.productsLandingIndex.onCreated(function () {
 
   // Update product subscription
   this.autorun(() => {
-    const slug = Reaction.Router.getParam("slug");
+    let slug = "";
+    let limit;
+    if(Reaction.hasAdminAccess()){
+      slug = Reaction.Router.getParam("slug");
+      limit = Session.get("productScrollLimit");
+    }else{
+      slug = "home-best-sellers";
+      limit = 4;
+    }
     const tag = Tags.findOne({ slug: slug }) || Tags.findOne(slug);
-    const scrollLimit = Session.get("productScrollLimit");
+    const scrollLimit = limit;
     let tags = {}; // this could be shop default implementation needed
 
     if (tag) {
