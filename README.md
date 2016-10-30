@@ -1,6 +1,6 @@
 #Reaction Plugin Customization Exercise
 
-This is based off of Brent Hover's [reaction example plugin](https://github.com/reactioncommerce/reaction-example-plugin) starter. Brent is very helpful and hopefully this minimizes the questions he gets asked in the future;)
+This is based off of Brent Hover's [reaction example plugin](https://github.com/reactioncommerce/reaction-example-plugin) starter. Brent is very helpful and hopefully this minimizes the questions he gets asked in the future;) Images in this project are large files, they have yet to be optimized for responsive.
 
 ```bash
 reaction reset -n && reaction
@@ -86,6 +86,7 @@ heroku config:set MONGO_URL=mongodb://[username]:[password]@pathtodb.com:[port],
 - [ ] Category Left Hand Nav
 - [x] Promo on all pages DEFAULT
 - [ ] Reskin PDP
+- [ ] Image optimization for responsive through Reaction or just as static assets
 - [ ] Category Landing Pages
 - [ ] Hero on Category Landing Pages
 
@@ -97,7 +98,8 @@ heroku config:set MONGO_URL=mongodb://[username]:[password]@pathtodb.com:[port],
 - [ ] Product Reviews
 - [ ] Faceted Search
 - [ ] Group Orders
-- [ ] Content Management System that maps to URL structure
+- [ ] Ability to create non product content (CMS)
+- [ ] Content Management System from external or internal source that maps to URL structure
 - [ ] SASS
 - [ ] Promo Manager
 - [ ] Category Landing Pages
