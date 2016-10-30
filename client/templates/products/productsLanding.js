@@ -171,13 +171,7 @@ Template.productsLanding.events({
 
 
 
-
-
-
-
-
-
-
+/* Home page productsLanding template for home-best-sellers tag */
 
 
 
