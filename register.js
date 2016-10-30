@@ -37,6 +37,9 @@ Reaction.registerPackage({
         images: 'images/hero/'
       },
       {
+        images: 'images/editorial/'
+      },
+      {
         images: 'images/ajax-loader.gif'
       },
       {
