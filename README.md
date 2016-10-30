@@ -2,9 +2,10 @@
 
 This is based off of Brent Hover's [reaction example plugin](https://github.com/reactioncommerce/reaction-example-plugin) starter. Brent is very helpful and hopefully this minimizes the questions he gets asked in the future;)
 
-```ssh
+```bash
 reaction reset -n && reaction
 ```
+
 
 ### React Slick Installation (Better process for installing plugin deps?)
 
@@ -20,6 +21,7 @@ npm install slick-carousel
 
 **Move files in public to your root public folder**
 You should move some of the react slick static assets into public as well. Not sure of a practical solution to this yet. (See Wants list below)
+
 
 ### Some helpful things to be aware of:
 
@@ -39,6 +41,7 @@ Do the ```reaction pull``` first to make sure there are no git merge conflicts. 
 git reset HEAD --hard
 ```
 
+
 ### More helpful things...
 
 * I suggest using [RoboMongo](https://robomongo.org) 
@@ -56,6 +59,24 @@ git reset HEAD --hard
 Session.set("INDEX_OPTIONS", {
   template: "productsLandingIndex"
 });
+```
+
+
+### Heroku things...
+
+**Deploy to Heroku**
+```bash
+git push heroku master
+```
+
+* For build caching problems:
+```bash
+heroku config:set --app appname BUILDPACK_CLEAR_CACHE=1
+```
+
+* For mongo connectivity ENV:
+```bash
+heroku config:set MONGO_URL=mongodb://[username]:[password]@pathtodb.com:[port],pathtodb.com:[port]/heroku_qhm1pvcm?replicaSet=rs-[rsid]
 ```
 
 
